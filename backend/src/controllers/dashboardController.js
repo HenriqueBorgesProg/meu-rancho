@@ -29,8 +29,8 @@ async function calcularIndicadores() {
     });
 
     if (ultimaPesagem) {
-      somaGmd += ultimaPesagem.gmd;
-      somaKg += ultimaPesagem.weight_kg;
+      somaGmd += parseFloat(ultimaPesagem.gmd) || 0;
+      somaKg += parseFloat(ultimaPesagem.weight_kg) || 0;
       pointer++;
     }
   }

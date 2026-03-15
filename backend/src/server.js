@@ -2,8 +2,7 @@ const app = require("./app");
 const sequelize = require("./config/database");
 require("dotenv").config();
 
-// Will be enabled on Day 2:
-// require('./jobs/scheduler')
+require("./jobs/scheduler");
 
 const PORT = process.env.PORT || 3000;
 
